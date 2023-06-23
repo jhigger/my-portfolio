@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Hero from "~/components/Hero";
 
 export default function Home() {
 	return (
@@ -11,11 +12,9 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className="flex min-h-screen flex-col items-center justify-center bg-gray-950">
-				<div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-					<h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-						Hello, World!
-					</h1>
+			<main className="flex min-h-screen items-center justify-center bg-gray-950">
+				<div className="container mx-auto px-4 py-16">
+					<Hero />
 				</div>
 			</main>
 		</>
