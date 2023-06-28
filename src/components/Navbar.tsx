@@ -10,7 +10,7 @@ const Navbar = () => {
 					</Link>
 				</div>
 				<nav className="flex-none">
-					<ul className="menu menu-horizontal gap-4 px-1">
+					<ul className="menu menu-horizontal gap-2 px-1">
 						<li>
 							<a>Link</a>
 						</li>
