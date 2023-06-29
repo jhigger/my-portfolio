@@ -2,7 +2,7 @@ import { Balancer } from "react-wrap-balancer";
 
 const Hero = () => {
 	return (
-		<section className="prose-base mx-auto flex flex-col md:prose-2xl prose-headings:font-bold lg:w-2/3">
+		<section className="prose-base mx-auto flex min-h-screen flex-col justify-center md:prose-2xl prose-headings:font-bold lg:w-3/4">
 			<div className="mb-4 text-base font-bold text-gray-200">
 				Hi, my name is
 			</div>
