@@ -28,7 +28,7 @@ const About = () => {
 	];
 
 	return (
-		<div className="prose-base mx-auto flex flex-col py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
+		<section className="prose-base mx-auto flex flex-col py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
 			<div id="about-portal"></div>
 			<h2 className="title-line-end flex w-2/3 gap-6 self-end whitespace-nowrap">
 				About Me
@@ -94,7 +94,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

@@ -1,6 +1,6 @@
 const Works = () => {
 	return (
-		<div className="prose-base mx-auto flex flex-col py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
+		<section className="prose-base mx-auto flex flex-col py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
 			<h2 className="title-line-start flex w-2/3 gap-6 self-start whitespace-nowrap">
 				Some of my works
 			</h2>
@@ -13,7 +13,7 @@ const Works = () => {
 					<li className="">project4</li>
 				</ul>
 			</div>
-		</div>
+		</section>
 	);
 };
 
