@@ -12,7 +12,7 @@ export default function Home() {
 				<title>John Jhigger</title>
 				<meta
 					name="description"
-					content="John Jhigger is a self-taught web developer who's passionate about creating awesome stuff on the web."
+					content="I am a self-taught web developer who's passionate about creating awesome stuff on the web."
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
