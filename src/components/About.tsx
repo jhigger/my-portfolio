@@ -61,7 +61,7 @@ const About = () => {
 					<div className="custom-divider-vertical absolute m-0 ml-8 h-8 md:h-16"></div>
 					<div className="mx-12 w-full">
 						<h3>My Tools 🛠️</h3>
-						<ul className="flex flex-wrap items-center gap-4">
+						<ul className="flex flex-wrap items-center gap-4 p-0">
 							{skills.map((skill, i) => {
 								return (
 									<li
@@ -79,10 +79,10 @@ const About = () => {
 					</div>
 				</div>
 				<div className="flex gap-4">
-					<div className="custom-divider-vertical absolute right-0 top-0 m-0 mr-8 h-64"></div>
+					<div className="custom-divider-vertical absolute right-0 top-0 m-0 mr-8 h-3/5 md:h-4/6"></div>
 					<div className="mx-12 w-full">
 						<h3 className="text-end">My Interests 💡</h3>
-						<ul className="flex flex-wrap items-center justify-end gap-4">
+						<ul className="flex flex-wrap items-center justify-end gap-4 p-0">
 							{hobbies.map((hobby, i) => {
 								return (
 									<li
