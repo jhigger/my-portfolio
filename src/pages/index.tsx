@@ -14,7 +14,7 @@ export default function Home() {
 					name="description"
 					content="I am a self-taught web developer who's passionate about creating awesome stuff on the web."
 				/>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/kairos.png" />
 			</Head>
 			<main className="prose-base relative dark:dark:bg-gray-950">
 				<Sides />

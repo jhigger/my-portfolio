@@ -37,7 +37,7 @@ const About = () => {
 				<div className="relative w-full max-w-xs">
 					<img
 						className="absolute -bottom-10 left-4 z-10 [clip-path:polygon(15%_0,100%_0,100%_85%,85%_99%,0_100%,0_15%)]"
-						src="https://avatars.githubusercontent.com/u/30231759"
+						src="/kairos.png"
 						alt="kairos"
 					/>
 					<div className="aspect-square bg-gray-400 [clip-path:polygon(15%_0,100%_0,100%_85%,85%_99%,0_100%,0_15%)]"></div>
