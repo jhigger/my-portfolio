@@ -1,7 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import Balancer from "react-wrap-balancer";
 
+type SkillType = { name: string; color: string };
+
 const About = () => {
+	const skills: SkillType[] = [
+		{ name: "HTML5", color: "border-[#DC4D25]" },
+		{ name: "CSS3", color: "border-[#254BDD]" },
+		{ name: "JavaScript", color: "border-[#EFD81D]" },
+		{ name: "ReactJS", color: "border-[#149ECA]" },
+		{ name: "NodeJS", color: "border-[#74B35A]" },
+		{ name: "TypeScript", color: "border-[#2F74C0]" },
+		{ name: "NextJS", color: "border-[#000000]" },
+		{ name: "TailwindCSS", color: "border-[#07B0CE]" },
+		{ name: "SQL", color: "border-[#4474CA]" },
+	];
+
 	return (
 		<div className="prose-base mx-auto flex flex-col py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
 			<div id="about-portal"></div>
@@ -20,16 +34,36 @@ const About = () => {
 				<p className="w-full self-start">
 					<Balancer>
 						👋 Hello there! I go by the name Kairos online, although
-						my real name is Jhigger. I am a front-end developer with
-						a passion for learning and improving every day. In my
-						free time, I enjoy watching anime and movies, as well as
-						occasionally playing games with my friends.
+						my real name is Jhigger. I am a web developer focused on
+						front-end with a passion for learning and improving
+						every day. In my free time, I enjoy watching anime and
+						movies, as well as occasionally playing games with my
+						friends.
 					</Balancer>
 				</p>
-				<ul>
+				{/* <ul>
 					<li>interests</li>
 					<li>skills</li>
-				</ul>
+				</ul> */}
+			</div>
+			<div className="flex items-stretch gap-4">
+				<div className="custom-divider-vertical m-0 ml-8 h-8 md:h-16"></div>
+				<div>
+					<h3>My Tools 🛠️</h3>
+					<ul className="flex flex-wrap items-center gap-4">
+						{skills.map((skill, i) => {
+							return (
+								<li
+									key={i}
+									className={`badge ${skill.color} dark:text-white`}
+								>
+									{skill.name}
+								</li>
+							);
+						})}
+						<li className="badge dark:text-white">...more soon</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	);
