@@ -16,6 +16,16 @@ const About = () => {
 		{ name: "SQL", color: "border-[#4474CA]" },
 	];
 
+	const hobbies = [
+		{ name: "Video Games" },
+		{ name: "Anime" },
+		{ name: "Sci-fi Movies" },
+		{ name: "Learning" },
+		{ name: "Puzzle Solving" },
+		{ name: "Chess" },
+		{ name: "Coding" },
+	];
+
 	return (
 		<div className="prose-base mx-auto flex flex-col py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
 			<div id="about-portal"></div>
@@ -46,23 +56,45 @@ const About = () => {
 					<li>skills</li>
 				</ul> */}
 			</div>
-			<div className="flex items-stretch gap-4">
-				<div className="custom-divider-vertical m-0 ml-8 h-8 md:h-16"></div>
-				<div>
-					<h3>My Tools 🛠️</h3>
-					<ul className="flex flex-wrap items-center gap-4">
-						{skills.map((skill, i) => {
-							return (
-								<li
-									key={i}
-									className={`badge ${skill.color} dark:text-white`}
-								>
-									{skill.name}
-								</li>
-							);
-						})}
-						<li className="badge dark:text-white">...more soon</li>
-					</ul>
+			<div className="relative">
+				<div className="flex gap-4">
+					<div className="custom-divider-vertical absolute m-0 ml-8 h-8 md:h-16"></div>
+					<div className="mx-12 w-full">
+						<h3>My Tools 🛠️</h3>
+						<ul className="flex flex-wrap items-center gap-4">
+							{skills.map((skill, i) => {
+								return (
+									<li
+										key={i}
+										className={`badge ${skill.color} dark:text-white`}
+									>
+										{skill.name}
+									</li>
+								);
+							})}
+							<li className="badge dark:text-white">
+								...more soon
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div className="flex gap-4">
+					<div className="custom-divider-vertical absolute right-0 top-0 m-0 mr-8 h-64"></div>
+					<div className="mx-12 w-full">
+						<h3 className="text-end">My Interests 💡</h3>
+						<ul className="flex flex-wrap items-center justify-end gap-4">
+							{hobbies.map((hobby, i) => {
+								return (
+									<li
+										key={i}
+										className="badge dark:text-white"
+									>
+										{hobby.name}
+									</li>
+								);
+							})}
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
