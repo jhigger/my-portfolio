@@ -29,7 +29,7 @@ const Hero = () => {
 					about creating awesome stuff on the web.
 				</Balancer>
 			</p>
-			<div className="absolute bottom-32 z-50 flex w-full items-center justify-center">
+			<div className="absolute bottom-[15%] z-50 flex w-full items-center justify-center">
 				<BsChevronDoubleDown
 					className="btn btn-circle btn-outline border-neutral p-2"
 					onClick={handleClick}
