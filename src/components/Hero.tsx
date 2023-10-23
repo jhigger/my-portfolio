@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import { Balancer } from "react-wrap-balancer";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
 	const [aboutEl, setAboutEl] = useState<HTMLElement | null>(null);
@@ -19,7 +20,15 @@ const Hero = () => {
 			<div className="mb-4 text-base font-bold dark:text-gray-200">
 				Hi, my name is
 			</div>
-			<h1 className="m-0 dark:text-gray-200 md:m-0">John Jhigger</h1>
+			<h1 className="m-0 dark:text-gray-200 md:m-0">
+				<Typewriter
+					options={{
+						strings: ["John Jhigger", "Kairos", "Jhiggs"],
+						autoStart: true,
+						loop: true,
+					}}
+				/>
+			</h1>
 			<h2 className="mb-6 mt-2 text-3xl dark:text-gray-400 md:mt-4">
 				I create stuff for the internet
 			</h2>
