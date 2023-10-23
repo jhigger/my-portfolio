@@ -22,19 +22,20 @@ const Hero = () => {
 				Hi, my name is
 			</div>
 			<h1 className="m-0 dark:text-gray-200 md:m-0">
-				<span className="hidden">John Jhigger</span>
 				<Typewriter
 					onInit={(typewriter) => {
 						typewriter
-							.pauseFor(1000)
+							.pasteString("John Jhigger", null)
+							.pauseFor(2500)
+							.deleteAll()
 							.typeString("Jhigger")
-							.pauseFor(1000)
+							.pauseFor(2500)
 							.deleteAll()
 							.typeString("Kairos")
-							.pauseFor(1000)
+							.pauseFor(2500)
 							.deleteAll()
 							.typeString("Jhiggs")
-							.pauseFor(1000)
+							.pauseFor(2500)
 							.deleteAll()
 							.start();
 					}}
