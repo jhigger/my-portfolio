@@ -22,7 +22,7 @@ const Hero = () => {
 				Hi, my name is
 			</div>
 			<h1 className="m-0 dark:text-gray-200 md:m-0">
-				<span className="hidden">John Jhigger - Portfolio</span>
+				<span className="hidden">John Jhigger</span>
 				<Typewriter
 					onInit={(typewriter) => {
 						typewriter
