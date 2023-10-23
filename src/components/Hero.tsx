@@ -22,11 +22,23 @@ const Hero = () => {
 				Hi, my name is
 			</div>
 			<h1 className="m-0 dark:text-gray-200 md:m-0">
-				<span className="hidden">John Jhigger</span>
+				<span className="hidden">John Jhigger - Portfolio</span>
 				<Typewriter
+					onInit={(typewriter) => {
+						typewriter
+							.pauseFor(1000)
+							.typeString("Jhigger")
+							.pauseFor(1000)
+							.deleteAll()
+							.typeString("Kairos")
+							.pauseFor(1000)
+							.deleteAll()
+							.typeString("Jhiggs")
+							.pauseFor(1000)
+							.deleteAll()
+							.start();
+					}}
 					options={{
-						strings: ["Jhigger", "Kairos", "Jhiggs"],
-						autoStart: true,
 						loop: true,
 					}}
 				/>
