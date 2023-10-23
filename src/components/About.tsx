@@ -2,6 +2,7 @@
 import Balancer from "react-wrap-balancer";
 
 type SkillType = { name: string; color: string };
+type HobbyType = { name: string };
 
 const About = () => {
 	const skills: SkillType[] = [
@@ -13,10 +14,10 @@ const About = () => {
 		{ name: "TypeScript", color: "border-[#2F74C0]" },
 		{ name: "NextJS", color: "border-[#000000]" },
 		{ name: "TailwindCSS", color: "border-[#07B0CE]" },
-		{ name: "SQL", color: "border-[#4474CA]" },
+		{ name: "MySQL", color: "border-[#F29111]" },
 	];
 
-	const hobbies = [
+	const hobbies: HobbyType[] = [
 		{ name: "Video Games" },
 		{ name: "Anime" },
 		{ name: "Sci-fi Movies" },
@@ -51,10 +52,6 @@ const About = () => {
 						friends.
 					</Balancer>
 				</p>
-				{/* <ul>
-					<li>interests</li>
-					<li>skills</li>
-				</ul> */}
 			</div>
 			<div className="relative">
 				<div className="flex gap-4">

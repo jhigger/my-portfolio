@@ -7,6 +7,7 @@ import Typewriter from "typewriter-effect";
 const Hero = () => {
 	const [aboutEl, setAboutEl] = useState<HTMLElement | null>(null);
 	const ref = useRef<HTMLDivElement>(null);
+
 	const handleClick = () => {
 		ref.current?.scrollIntoView({ behavior: "smooth" });
 	};
@@ -21,9 +22,10 @@ const Hero = () => {
 				Hi, my name is
 			</div>
 			<h1 className="m-0 dark:text-gray-200 md:m-0">
+				<span className="hidden">John Jhigger</span>
 				<Typewriter
 					options={{
-						strings: ["John Jhigger", "Kairos", "Jhiggs"],
+						strings: ["Jhigger", "Kairos", "Jhiggs"],
 						autoStart: true,
 						loop: true,
 					}}
