@@ -29,13 +29,13 @@ const Hero = () => {
 							.pauseFor(2500)
 							.deleteAll()
 							.typeString("Jhigger")
-							.pauseFor(2500)
+							.pauseFor(1500)
 							.deleteChars(2)
 							.typeString("s")
-							.pauseFor(2500)
+							.pauseFor(1500)
 							.deleteAll()
 							.typeString("Kairos")
-							.pauseFor(2500)
+							.pauseFor(1500)
 							.deleteAll()
 							.start();
 					}}
