@@ -15,6 +15,7 @@ const About = () => {
 		{ name: "NextJS", color: "border-[#000000]" },
 		{ name: "TailwindCSS", color: "border-[#07B0CE]" },
 		{ name: "MySQL", color: "border-[#F29111]" },
+		{ name: "Prisma", color: "border-[#2D3748]" },
 	];
 
 	const hobbies: HobbyType[] = [
