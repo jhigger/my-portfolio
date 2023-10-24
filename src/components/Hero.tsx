@@ -54,10 +54,12 @@ const Hero = () => {
 				</Balancer>
 			</p>
 			<div className="absolute bottom-[15%] z-50 flex w-full items-center justify-center">
-				<BsChevronDoubleDown
-					className="btn btn-circle btn-outline border-neutral p-2"
+				<button
+					className="btn btn-circle btn-outline border-neutral"
 					onClick={handleClick}
-				/>
+				>
+					<BsChevronDoubleDown size={24} />
+				</button>
 			</div>
 			{aboutEl && createPortal(<div ref={ref} />, aboutEl)}
 		</section>
