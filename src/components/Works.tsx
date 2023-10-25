@@ -42,7 +42,7 @@ const FeaturedProjects = () => {
 				<span className="diagonals"></span>
 				Featured Projects
 			</h3>
-			<ul className="flex flex-col gap-16 [&>li:nth-child(even)>div:nth-of-type(1)]:col-start-6 [&>li:nth-child(even)>div:nth-of-type(2)>p]:text-start [&>li:nth-child(even)>div:nth-of-type(2)]:col-start-1 [&>li:nth-child(even)>div:nth-of-type(2)]:col-end-8 [&>li:nth-child(even)>div:nth-of-type(2)]:items-start">
+			<ul className="flex flex-col gap-24 [&>li:nth-child(even)>div:nth-of-type(1)]:col-start-6 [&>li:nth-child(even)>div:nth-of-type(2)>p]:text-start [&>li:nth-child(even)>div:nth-of-type(2)]:col-start-1 [&>li:nth-child(even)>div:nth-of-type(2)]:col-end-8 [&>li:nth-child(even)>div:nth-of-type(2)]:items-start">
 				{featuredProjects.map((project, i) => {
 					return (
 						<li
@@ -142,7 +142,7 @@ const OtherProjects = () => {
 
 const Works = () => {
 	return (
-		<section className="prose-base mx-auto flex flex-col py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
+		<section className="prose-base mx-auto flex flex-col py-24 md:prose-xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
 			<h2 className="title-line-start flex w-2/3 gap-6 self-start whitespace-nowrap">
 				Some Of My Works ⚙️
 			</h2>
