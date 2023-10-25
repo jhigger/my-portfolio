@@ -20,7 +20,7 @@
 	}
 
 	.diagonals {
-		@apply relative mr-12 h-3 w-8 -skew-x-[45deg] transform border-x-[10px] border-gray-400 before:absolute before:-right-14 before:h-full before:w-8 before:border-x-[10px] before:border-gray-400 before:content-[''];
+		@apply relative mr-12 h-3 w-8 -skew-x-[45deg] transform border-x-[10px] border-gray-400/50 before:absolute before:-right-14 before:h-full before:w-8 before:border-x-[10px] before:border-gray-400/50 before:content-[''];
 	}
 }
 
