@@ -4,11 +4,11 @@
 
 @layer components {
 	.title-line-end {
-		@apply before:my-auto before:h-px before:w-full before:bg-gray-500 after:my-auto after:aspect-square after:h-2 after:w-2 after:bg-gray-500;
+		@apply flex w-2/3 gap-6 self-end whitespace-nowrap before:my-auto before:h-px before:w-full before:bg-gray-500 after:my-auto after:aspect-square after:h-2 after:w-2 after:bg-gray-500;
 	}
 
 	.title-line-start {
-		@apply before:my-auto before:aspect-square before:h-2 before:w-2 before:bg-gray-500 after:my-auto after:h-px after:w-full after:bg-gray-500;
+		@apply flex w-2/3 gap-6 self-start whitespace-nowrap before:my-auto before:aspect-square before:h-2 before:w-2 before:bg-gray-500 after:my-auto after:h-px after:w-full after:bg-gray-500;
 	}
 
 	.custom-divider {

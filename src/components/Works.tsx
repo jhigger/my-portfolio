@@ -38,21 +38,21 @@ const FeaturedProjects = () => {
 
 	return (
 		<section>
-			<h3 className="flex items-baseline justify-end gap-4">
+			<h3 className="!mt-0 flex items-baseline justify-end gap-4">
 				<span className="diagonals"></span>
 				Featured Projects
 			</h3>
-			<ul className="flex flex-col gap-24 [&>li:nth-child(even)>div:nth-of-type(1)]:col-start-6 [&>li:nth-child(even)>div:nth-of-type(2)>p]:text-start [&>li:nth-child(even)>div:nth-of-type(2)]:col-start-1 [&>li:nth-child(even)>div:nth-of-type(2)]:col-end-8 [&>li:nth-child(even)>div:nth-of-type(2)]:items-start">
+			<ul className="flex flex-col gap-12 xl:gap-24 [&>li:nth-child(even)>div:nth-of-type(1)]:col-start-6 [&>li:nth-child(even)>div:nth-of-type(2)>p]:text-start [&>li:nth-child(even)>div:nth-of-type(2)]:col-start-1 [&>li:nth-child(even)>div:nth-of-type(2)]:col-end-8 [&>li:nth-child(even)>div:nth-of-type(2)]:items-start">
 				{featuredProjects.map((project, i) => {
 					return (
 						<li
 							key={i}
 							className="grid w-full grid-cols-1 items-center xl:grid-cols-12"
 						>
-							<div className="col-span-7 col-start-1 row-span-full aspect-video overflow-clip rounded-lg bg-gray-500/5 ring ring-gray-500/5">
+							<div className="col-span-7 col-start-1 row-span-full aspect-video overflow-clip rounded-lg bg-gray-500/5 ring ring-gray-500/5 hover:ring-gray-500/50">
 								<div className="relative flex h-full w-full items-center justify-center">
 									<a
-										className="absolute z-10 h-full w-full hover:bg-gray-950/50"
+										className="absolute z-10 h-full w-full transition hover:bg-gray-950/50 focus:bg-gray-950/50"
 										href={project.preview}
 										target="_blank"
 										rel="noopener noreferrer"
@@ -64,9 +64,9 @@ const FeaturedProjects = () => {
 									/>
 								</div>
 							</div>
-							<div className="z-10 col-span-7 col-start-6 row-span-full flex h-full flex-col items-end justify-center gap-4">
+							<div className="col-span-7 col-start-6 row-span-full flex h-full flex-col items-end justify-center gap-4">
 								<h4>{project.title}</h4>
-								<p className="w-full rounded-lg bg-gray-100 p-4 text-end shadow-lg dark:bg-gray-900">
+								<p className="z-10 w-full rounded-lg bg-gray-100 p-4 text-end shadow-lg md:prose-xl dark:bg-gray-900">
 									{project.description}
 								</p>
 								<div className="flex gap-4">
@@ -142,10 +142,8 @@ const OtherProjects = () => {
 
 const Works = () => {
 	return (
-		<section className="prose-base mx-auto flex flex-col py-24 md:prose-xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
-			<h2 className="title-line-start flex w-2/3 gap-6 self-start whitespace-nowrap">
-				Some Of My Works ⚙️
-			</h2>
+		<section className="prose-base mx-auto flex flex-col gap-24 py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
+			<h2 className="title-line-start !mb-0">Some Of My Works ⚙️</h2>
 
 			<FeaturedProjects />
 			<OtherProjects />

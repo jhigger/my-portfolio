@@ -31,7 +31,7 @@ const About = () => {
 	return (
 		<section className="prose-base mx-auto flex flex-col py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
 			<div id="about-portal"></div>
-			<h2 className="title-line-end flex w-2/3 gap-6 self-end whitespace-nowrap">
+			<h2 className="title-line-end">
 				About Me
 			</h2>
 			<div className="flex w-full flex-col items-center gap-4 rounded-2xl bg-gray-500/5 p-8 xl:flex-row xl:gap-24">
