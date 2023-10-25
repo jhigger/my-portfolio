@@ -18,6 +18,10 @@
 	.custom-divider-vertical {
 		@apply relative w-[2px] bg-gray-500 before:absolute before:-left-[5px] before:bottom-full before:h-3 before:w-3 before:rounded-full before:border-2 before:border-gray-500 after:absolute after:-left-[5px] after:top-full after:h-3 after:w-3 after:rounded-full after:border-2 after:border-gray-500 lg:mx-28;
 	}
+
+	.diagonals {
+		@apply relative mr-12 h-3 w-8 -skew-x-[45deg] transform border-x-[10px] border-gray-400 before:absolute before:-right-14 before:h-full before:w-8 before:border-x-[10px] before:border-gray-400 before:content-[''];
+	}
 }
 
 @layer utilities {
