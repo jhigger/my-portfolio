@@ -52,7 +52,7 @@ const FeaturedProjects = () => {
 							<div className="col-span-7 col-start-1 row-span-full aspect-video overflow-clip rounded-lg bg-gray-500/5 ring ring-gray-500/5 hover:ring-gray-500/50">
 								<div className="relative flex h-full w-full items-center justify-center">
 									<a
-										className="absolute z-10 h-full w-full transition hover:bg-gray-950/50 focus:bg-gray-950/50"
+										className="absolute z-10 h-full w-full transition-all hover:bg-gray-950/50 focus:bg-gray-950/50"
 										href={project.preview}
 										target="_blank"
 										rel="noopener noreferrer"
@@ -96,23 +96,29 @@ const FeaturedProjects = () => {
 	);
 };
 
-type OtherProjectType = { name: string };
+type OtherProjectType = Omit<FeaturedProjectType, "image">;
 
 const OtherProjects = () => {
-	const projects: OtherProjectType[] = [
-		{
-			name: "project1",
-		},
-		{
-			name: "project2",
-		},
-		{
-			name: "project3",
-		},
-		{
-			name: "project4",
-		},
-	];
+	const projects: OtherProjectType[] = Array(10)
+		.fill(null)
+		.map((_, i) => {
+			if (i % 2) {
+				return {
+					title: "title title title",
+					description:
+						"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, minima.",
+					preview: "",
+					github: "",
+				};
+			} else {
+				return {
+					title: "title title title",
+					description: "Lorem ipsum, dolor sit amet.",
+					preview: "",
+					github: "",
+				};
+			}
+		});
 
 	return (
 		<section>
@@ -120,22 +126,39 @@ const OtherProjects = () => {
 				<span className="diagonals"></span>
 				Other Projects
 			</h3>
-			<div className="group flex w-full flex-col items-center gap-4 rounded-2xl bg-gray-500/5 p-8 xl:flex-row xl:gap-24">
-				<div className="text-9xl after:content-['📁'] group-hover:after:content-['📂']"></div>
-
-				<ul className="flex w-full list-disc flex-col items-center lg:block lg:columns-2 [&>li]:w-fit [&>li]:pr-2">
-					{projects.map((project) => {
-						return (
-							<li
-								key={project.name}
-								className="hover:custom-underline list-[square] border-b-[1px] border-transparent first-of-type:m-0 hover:list-['👉']"
-							>
-								{project.name}
-							</li>
-						);
-					})}
-				</ul>
-			</div>
+			<ul className="prose-base grid w-full items-center gap-4 md:grid-cols-2 xl:grid-cols-3">
+				{projects.map((project) => {
+					return (
+						<li key={project.title} className="group h-full">
+							<div className="relative flex h-full flex-col overflow-clip rounded-lg bg-gray-500/5 p-8 shadow">
+								<div className="folder-effect"></div>
+								<h4 className="custom-underline !mt-0 border-b-[1px] border-transparent pr-2">
+									{project.title}
+								</h4>
+								<p>{project.description}</p>
+								<div className="flex h-full items-end gap-4">
+									<a
+										title="GitHub Link"
+										href={project.github}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<FiGithub />
+									</a>
+									<a
+										title="Preview Link"
+										href={project.preview}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<FiExternalLink />
+									</a>
+								</div>
+							</div>
+						</li>
+					);
+				})}
+			</ul>
 		</section>
 	);
 };
@@ -143,7 +166,10 @@ const OtherProjects = () => {
 const Works = () => {
 	return (
 		<section className="prose-base mx-auto flex flex-col gap-24 py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
-			<h2 className="title-line-start !mb-0">Some Of My Works ⚙️</h2>
+			<h2 className="title-line-start group !mb-0">
+				Some Of My Works
+				<span className="after:content-['📁'] group-hover:after:content-['📂']"></span>
+			</h2>
 
 			<FeaturedProjects />
 			<OtherProjects />

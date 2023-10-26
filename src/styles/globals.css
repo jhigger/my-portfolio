@@ -26,6 +26,10 @@
 
 @layer utilities {
 	.custom-underline {
-		@apply relative w-fit border-b-[1px] border-gray-400 pr-2 transition-all duration-100 before:absolute before:-bottom-[1px] before:-right-[5px] before:h-[10px] before:w-[8px] before:-skew-x-[45deg] before:transform before:border-x-[2px] before:border-gray-400 before:transition-all before:duration-100 before:content-[''];
+		@apply relative w-fit border-b-[1px] border-gray-400 pr-2 before:absolute before:-bottom-[1px] before:-right-[4px] before:h-[6px] before:w-[6px] before:-skew-x-[45deg] before:transform before:border-x-[2px] before:border-gray-400 before:content-[''];
+	}
+
+	.folder-effect {
+		@apply before:absolute before:-right-1 before:top-0 before:h-2 before:w-1/2 before:skew-x-[45deg] before:bg-gray-300 before:shadow-inner before:transition-all after:absolute after:left-0 after:top-0 after:h-px after:w-full after:bg-gray-300 after:shadow-inner after:transition-all before:group-hover:h-4 after:group-hover:h-1 before:dark:bg-gray-600 after:dark:bg-gray-600;
 	}
 }
