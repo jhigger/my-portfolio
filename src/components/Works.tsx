@@ -42,7 +42,7 @@ const FeaturedProjects = () => {
 				<span className="diagonals"></span>
 				Featured Projects
 			</h3>
-			<ul className="flex flex-col gap-12 xl:gap-24 [&>li:nth-child(even)>div:nth-of-type(1)]:col-start-6 [&>li:nth-child(even)>div:nth-of-type(2)>p]:text-start [&>li:nth-child(even)>div:nth-of-type(2)]:col-start-1 [&>li:nth-child(even)>div:nth-of-type(2)]:col-end-8 [&>li:nth-child(even)>div:nth-of-type(2)]:items-start">
+			<ul className="flex flex-col gap-12 p-0 xl:gap-24 [&>li:nth-child(even)>div:nth-of-type(1)]:col-start-6 [&>li:nth-child(even)>div:nth-of-type(2)>p]:text-start [&>li:nth-child(even)>div:nth-of-type(2)]:col-start-1 [&>li:nth-child(even)>div:nth-of-type(2)]:col-end-8 [&>li:nth-child(even)>div:nth-of-type(2)]:items-start">
 				{featuredProjects.map((project, i) => {
 					return (
 						<li
@@ -126,7 +126,7 @@ const OtherProjects = () => {
 				<span className="diagonals"></span>
 				Other Projects
 			</h3>
-			<ul className="prose-base grid w-full items-center gap-4 md:grid-cols-2 xl:grid-cols-3">
+			<ul className="prose-base grid w-full items-center gap-4 p-0 md:grid-cols-2 xl:grid-cols-3">
 				{projects.map((project) => {
 					return (
 						<li key={project.title} className="group h-full">
