@@ -57,6 +57,7 @@ const Hero = () => {
 			<div className="absolute bottom-[15%] z-50 flex w-full items-center justify-center">
 				<button
 					className="btn btn-circle btn-outline border-neutral"
+					aria-label="Scroll down"
 					onClick={handleClick}
 				>
 					<BsChevronDoubleDown size={24} />

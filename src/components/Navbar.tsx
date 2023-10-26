@@ -19,6 +19,7 @@ const Navbar = ({ theme, handleToggle }: NavbarProps) => {
 				<div className="relative">
 					<button
 						className="btn btn-circle btn-ghost btn-sm relative"
+						aria-label="Toggle dark theme"
 						onClick={handleToggle}
 					>
 						{theme === "dark" ? <FaMoon /> : <FaSun />}

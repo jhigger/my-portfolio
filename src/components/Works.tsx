@@ -56,6 +56,7 @@ const FeaturedProjects = () => {
 										href={project.preview}
 										target="_blank"
 										rel="noopener noreferrer"
+										aria-label="Preview webpage"
 									></a>
 									<img
 										className="absolute"
