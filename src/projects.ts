@@ -11,7 +11,7 @@ export const featuredProjects: FeaturedProjectType[] = [
 		image: "images/pizza_stack.jpg",
 		title: "Pizza Stack",
 		description:
-			"Designed an attractive and user-friendly interface using ReactJS and Chakra UI, added animations using Framer Motion, integrated a reservation form for franchising using Formik, and optimized the website for mobile devices.",
+			"Designed an attractive and user-friendly interface using ReactJS and Chakra UI, added animations using Framer Motion, integrated a reservation form for franchising using Formik, and made it responsive for mobile devices.",
 		preview: "https://jhigger-pizzastack.netlify.app/",
 		github: "https://github.com/jhigger/pizzastack2",
 	},
@@ -19,7 +19,7 @@ export const featuredProjects: FeaturedProjectType[] = [
 		image: "images/duckett_architecture.jpg",
 		title: "Duckett Architecture",
 		description:
-			"Developed a landing page for an architectural firm based in New Zealand to showcase their projects. I utilized NextJS, ReactJS and TailwindCSS to easily design and make it SEO friendly.",
+			"Developed a landing page for an architectural firm based in New Zealand to showcase their projects. I utilized NextJS, TypeScript and TailwindCSS to easily design and make it SEO friendly.",
 		preview: "https://www.duckettarchitecture.co.nz/",
 		github: "https://github.com/jhigger/duckett-archi",
 	},

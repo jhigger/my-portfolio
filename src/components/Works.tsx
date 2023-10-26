@@ -80,6 +80,7 @@ const OtherProjects = () => {
 									<div className="folder-effect"></div>
 									<h4 className="custom-underline !mt-0 border-b-[1px] border-transparent pr-2">
 										<a
+											title="Preview"
 											href={project.preview}
 											target="_blank"
 											rel="noopener noreferrer"
@@ -90,7 +91,7 @@ const OtherProjects = () => {
 									<p>{project.description}</p>
 									<div className="flex h-full items-end gap-4">
 										<a
-											title="GitHub Link"
+											title="Source code"
 											href={project.github}
 											target="_blank"
 											rel="noopener noreferrer"
@@ -98,7 +99,7 @@ const OtherProjects = () => {
 											<FiGithub />
 										</a>
 										<a
-											title="Preview Link"
+											title="Preview"
 											href={project.preview}
 											target="_blank"
 											rel="noopener noreferrer"
