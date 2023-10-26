@@ -50,7 +50,7 @@ const FeaturedProjects = () => {
 							className="grid w-full grid-cols-1 items-center xl:grid-cols-12"
 						>
 							<div className="col-span-7 col-start-1 row-span-full aspect-video overflow-clip rounded-lg bg-gray-500/5 ring ring-gray-500/5 hover:ring-gray-500/50">
-								<div className="relative flex h-full w-full items-center justify-center">
+								<div className="group relative flex h-full w-full items-center justify-center">
 									<a
 										className="absolute z-10 h-full w-full transition-all hover:bg-gray-950/50 focus:bg-gray-950/50"
 										href={project.preview}
@@ -59,7 +59,7 @@ const FeaturedProjects = () => {
 										aria-label="Preview webpage"
 									></a>
 									<img
-										className="absolute"
+										className="absolute transition-all ease-in-out group-hover:scale-110"
 										src={project.image}
 										alt="Preview Image"
 									/>
