@@ -12,7 +12,7 @@ type FeaturedProjectType = {
 const FeaturedProjects = () => {
 	const featuredProjects: FeaturedProjectType[] = [
 		{
-			image: "images/pizza_stack.png",
+			image: "images/pizza_stack.jpg",
 			title: "Pizza Stack",
 			description:
 				"Designed an attractive and user-friendly interface using ReactJS and Chakra UI, added animations using Framer Motion, integrated a reservation form for franchising using Formik, and optimized the website for mobile devices.",
@@ -20,7 +20,7 @@ const FeaturedProjects = () => {
 			github: "https://github.com/jhigger/pizzastack2",
 		},
 		{
-			image: "images/duckett_architecture.png",
+			image: "images/duckett_architecture.jpg",
 			title: "Duckett Architecture",
 			description:
 				"Developed a landing page for an architectural firm based in New Zealand to showcase their projects. I utilized NextJS, ReactJS and TailwindCSS to easily design and make it SEO friendly.",
@@ -28,7 +28,7 @@ const FeaturedProjects = () => {
 			github: "https://github.com/jhigger/duckett-archi",
 		},
 		{
-			image: "images/qtopia.png",
+			image: "images/qtopia.jpg",
 			title: "Qtopia",
 			description: "Created a landing page for an NFT project.",
 			preview: "https://www.qtopia.io/",
