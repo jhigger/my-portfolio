@@ -41,6 +41,7 @@ const Hero = () => {
 					}}
 					options={{
 						loop: true,
+						cursor: "_",
 					}}
 				/>
 			</h1>
