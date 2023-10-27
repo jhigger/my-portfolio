@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { featuredProjects, otherProjects } from "~/projects";
+import FlipMove from "react-flip-move";
 
 const FeaturedProjects = () => {
 	return (
@@ -78,7 +79,13 @@ const OtherProjects = () => {
 				<span className="diagonals"></span>
 				Other Projects
 			</h3>
-			<ul className="prose-base grid w-full items-center gap-4 p-0 md:grid-cols-2 xl:grid-cols-3">
+			<FlipMove
+				className="prose-base grid w-full items-center gap-4 p-0 md:grid-cols-2 xl:grid-cols-3"
+				typeName="ul"
+				staggerDelayBy={100}
+				enterAnimation="fade"
+				leaveAnimation="none"
+			>
 				{[...otherProjects].reverse().map((project, i) => {
 					const itemsToShow = show ? otherProjects.length : 5;
 					if (i > itemsToShow) return;
@@ -121,7 +128,7 @@ const OtherProjects = () => {
 						</li>
 					);
 				})}
-			</ul>
+			</FlipMove>
 			<div className="flex w-full items-center justify-center">
 				<button className="cut-corners" onClick={toggleShow}>
 					Show {show ? "Less" : "More"}
