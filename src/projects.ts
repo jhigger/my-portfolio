@@ -32,7 +32,9 @@ export const featuredProjects: FeaturedProjectType[] = [
 	},
 ];
 
-type OtherProjectType = Omit<FeaturedProjectType, "image">;
+type OtherProjectType = Omit<FeaturedProjectType, "image" | "preview"> & {
+	preview?: string;
+};
 
 export const otherProjects: OtherProjectType[] = [
 	{
@@ -74,6 +76,50 @@ export const otherProjects: OtherProjectType[] = [
 		description: "Landing page for an NFT project.",
 		github: "https://github.com/jhigger/foxbyte",
 		preview: "https://kairos-foxbyte.vercel.app/",
+	},
+	{
+		title: "Point Of Sale System",
+		description:
+			"Made using React, MaterialUI, Formik for the front end. Node, ExpressJS and Sequelize for the back end with MVC design pattern in mind.",
+		github: "https://github.com/jhigger/POS",
+	},
+	{
+		title: "UA Stats Page",
+		description: "Statistics page for Utility APE",
+		github: "https://github.com/jhigger/ua-stats",
+		preview: "https://kairos-ua-stats-page.vercel.app/",
+	},
+	{
+		title: "UA Raid Page",
+		description:
+			"A Page for users to apply for Utility APE tweet raiding program.",
+		github: "https://github.com/jhigger/ua-pay-to-raid",
+		preview: "https://kairos-ua-pay-to-raid.vercel.app/",
+	},
+	{
+		title: "UA Client Dashboard",
+		description:
+			"A dashboard page for signing up to use Utility APE discord bot.",
+		github: "https://github.com/jhigger/ua-client-dashboard",
+		preview: "https://kairos-ua-dashboard-page.vercel.app/",
+	},
+	{
+		title: "UA Holders Page",
+		description: "A page for holders of Utility APE NFT",
+		github: "https://github.com/jhigger/ua-holders-page",
+		preview: "https://kairos-ua-holders-page.vercel.app/",
+	},
+	{
+		title: "UA Client Page",
+		description: "Page for clients of Utility APE discord bot.",
+		github: "https://github.com/jhigger/ua-client-page",
+		preview: "https://kairos-ua-client-page.vercel.app/",
+	},
+	{
+		title: "Utility APE Home",
+		description: "Home page of an NFT project.",
+		github: "https://github.com/jhigger/ua-main-page",
+		preview: "https://kairos-ua-main-page.vercel.app/",
 	},
 	// {
 	// 	title: "",
