@@ -73,4 +73,16 @@
 			0 var(--clip-box)
 		);
 	}
+
+	.trapezoid {
+		@apply relative w-fit py-4 text-center font-mono;
+	}
+
+	.trapezoid::before {
+		@apply absolute h-full bg-red-950/5 content-[''] dark:bg-gray-500/5;
+		width: 150%;
+		top: 0;
+		left: -25%;
+		clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+	}
 }

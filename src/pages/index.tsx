@@ -2,6 +2,8 @@
 import Head from "next/head";
 import { FaDiscord, FaGithub } from "react-icons/fa";
 import About from "~/components/About";
+import Contact from "~/components/Contact";
+import Footer from "~/components/Footer";
 import Hero from "~/components/Hero";
 import Works from "~/components/Works";
 
@@ -24,9 +26,12 @@ export default function Home() {
 						<About />
 						<div className="custom-divider" />
 						<Works />
+						<div className="custom-divider" />
+						<Contact />
 					</div>
 				</div>
 			</main>
+			<Footer />
 		</>
 	);
 }
