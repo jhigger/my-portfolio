@@ -67,6 +67,7 @@ const FeaturedProjects = () => {
 };
 
 const OtherProjects = () => {
+	const initialProjectsShowed = 5;
 	const [show, setShow] = useState(false);
 
 	const toggleShow = () => {
@@ -87,8 +88,11 @@ const OtherProjects = () => {
 				leaveAnimation="none"
 			>
 				{[...otherProjects].reverse().map((project, i) => {
-					const itemsToShow = show ? otherProjects.length : 5;
+					const itemsToShow = show
+						? otherProjects.length
+						: initialProjectsShowed;
 					if (i > itemsToShow) return;
+
 					return (
 						<li key={project.title} className="group h-full">
 							<div className="relative flex h-full flex-col overflow-clip rounded-lg bg-gray-500/5 p-8 shadow">
@@ -130,7 +134,11 @@ const OtherProjects = () => {
 				})}
 			</FlipMove>
 			<div className="flex w-full items-center justify-center">
-				<button className="cut-corners" onClick={toggleShow}>
+				<button
+					className="cut-corners"
+					onClick={toggleShow}
+					aria-label={`Show ${show ? "Less" : "More"}`}
+				>
 					Show {show ? "Less" : "More"}
 				</button>
 			</div>
