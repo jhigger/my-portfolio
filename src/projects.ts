@@ -80,7 +80,7 @@ export const otherProjects: OtherProjectType[] = [
 	{
 		title: "Point Of Sale System",
 		description:
-			"Made using React, MaterialUI, Formik for the front end. Node, ExpressJS and Sequelize for the back end with MVC design pattern in mind.",
+			"Made using React, MaterialUI, Formik, Node, ExpressJS and Sequelize ORM with MVC design pattern in mind.",
 		github: "https://github.com/jhigger/POS",
 	},
 	{
