@@ -70,6 +70,7 @@ const Sides = () => {
 					<a
 						className="m-0 p-2 text-xs tracking-widest [writing-mode:vertical-lr]"
 						href="mailto: njohnjhigger@gmail.com"
+						title="Email"
 					>
 						njohnjhigger@gmail.com
 					</a>
