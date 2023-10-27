@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { useState } from "react";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { featuredProjects, otherProjects } from "~/projects";
 
@@ -65,6 +66,12 @@ const FeaturedProjects = () => {
 };
 
 const OtherProjects = () => {
+	const [show, setShow] = useState(false);
+
+	const toggleShow = () => {
+		setShow((prev) => !prev);
+	};
+
 	return (
 		<section>
 			<h3 className="row-span-full flex items-baseline justify-end gap-4">
@@ -72,32 +79,34 @@ const OtherProjects = () => {
 				Other Projects
 			</h3>
 			<ul className="prose-base grid w-full items-center gap-4 p-0 md:grid-cols-2 xl:grid-cols-3">
-				{otherProjects
-					.map((project) => {
-						return (
-							<li key={project.title} className="group h-full">
-								<div className="relative flex h-full flex-col overflow-clip rounded-lg bg-gray-500/5 p-8 shadow">
-									<div className="folder-effect"></div>
-									<h4 className="custom-underline !mt-0 border-b-[1px] border-transparent pr-2">
-										<a
-											title="Preview"
-											href={project.preview}
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											{project.title}
-										</a>
-									</h4>
-									<p>{project.description}</p>
-									<div className="flex h-full items-end gap-4">
-										<a
-											title="Source code"
-											href={project.github}
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											<FiGithub />
-										</a>
+				{[...otherProjects].reverse().map((project, i) => {
+					const itemsToShow = show ? otherProjects.length : 5;
+					if (i > itemsToShow) return;
+					return (
+						<li key={project.title} className="group h-full">
+							<div className="relative flex h-full flex-col overflow-clip rounded-lg bg-gray-500/5 p-8 shadow">
+								<div className="folder-effect"></div>
+								<h4 className="custom-underline !mt-0 border-b-[1px] border-transparent pr-2">
+									<a
+										title="Preview"
+										href={project.preview}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										{project.title}
+									</a>
+								</h4>
+								<p>{project.description}</p>
+								<div className="flex h-full items-end gap-4">
+									<a
+										title="Source code"
+										href={project.github}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<FiGithub />
+									</a>
+									{project.preview && (
 										<a
 											title="Preview"
 											href={project.preview}
@@ -106,13 +115,18 @@ const OtherProjects = () => {
 										>
 											<FiExternalLink />
 										</a>
-									</div>
+									)}
 								</div>
-							</li>
-						);
-					})
-					.reverse()}
+							</div>
+						</li>
+					);
+				})}
 			</ul>
+			<div className="flex w-full items-center justify-center">
+				<button className="cut-corners" onClick={toggleShow}>
+					Show {show ? "Less" : "More"}
+				</button>
+			</div>
 		</section>
 	);
 };

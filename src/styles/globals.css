@@ -32,4 +32,45 @@
 	.folder-effect {
 		@apply before:absolute before:-right-1 before:top-0 before:h-2 before:w-1/2 before:skew-x-[45deg] before:bg-gray-300 before:shadow-inner before:transition-all after:absolute after:left-0 after:top-0 after:h-px after:w-full after:bg-gray-300 after:shadow-inner after:transition-all before:group-hover:h-4 after:group-hover:h-1 before:dark:bg-gray-600 after:dark:bg-gray-600;
 	}
+	.cut-corners {
+		@apply prose-base relative my-8 px-8;
+	}
+
+	.cut-corners::before {
+		@apply btn rounded-none border-none bg-gray-50/95 shadow-xl dark:bg-gray-950/95;
+		content: "";
+		position: absolute;
+		z-index: -1;
+		--clip-box: 1rem;
+		top: -40%;
+		left: 0;
+		width: 100%;
+		clip-path: polygon(
+			var(--clip-box) 0,
+			100% 0,
+			100% calc(100% - var(--clip-box)),
+			calc(100% - var(--clip-box)) 100%,
+			0 100%,
+			0 var(--clip-box)
+		);
+	}
+
+	.cut-corners::after {
+		@apply btn scale-105 rounded-none border-none !bg-gray-800/95 shadow-xl duration-100 hover:scale-100 dark:!bg-gray-400/95;
+		content: "";
+		position: absolute;
+		z-index: -2;
+		--clip-box: 1rem;
+		top: -40%;
+		left: 0;
+		width: 100%;
+		clip-path: polygon(
+			var(--clip-box) 0,
+			100% 0,
+			100% calc(100% - var(--clip-box)),
+			calc(100% - var(--clip-box)) 100%,
+			0 100%,
+			0 var(--clip-box)
+		);
+	}
 }
