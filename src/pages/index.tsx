@@ -47,6 +47,7 @@ const Sides = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Go to github profile"
+							title="Github profile"
 						>
 							<FaGithub />
 						</a>
@@ -57,6 +58,7 @@ const Sides = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Go to discord profile"
+							title="Discord profile"
 						>
 							<FaDiscord />
 						</a>

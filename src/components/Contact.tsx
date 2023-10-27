@@ -11,6 +11,7 @@ const Contact = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Go to github profile"
+						title="Github profile"
 					>
 						<FaGithub />
 					</a>
@@ -21,12 +22,13 @@ const Contact = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Go to discord profile"
+						title="Discord profile"
 					>
 						<FaDiscord />
 					</a>
 				</li>
 				<li>
-					<a href="mailto:njohnjhigger@gmail.com">
+					<a href="mailto:njohnjhigger@gmail.com" title="Email">
 						<FaEnvelope />
 					</a>
 				</li>
