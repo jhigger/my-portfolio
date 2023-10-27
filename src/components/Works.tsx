@@ -151,7 +151,7 @@ const Works = () => {
 		<section className="prose-base mx-auto flex flex-col gap-24 py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
 			<h2 className="title-line-start group !mb-0">
 				Some Of My Works
-				<span className="after:content-['📁'] group-hover:after:content-['📂']"></span>
+				<span className="sm:after:content-['📁'] sm:group-hover:after:content-['📂']"></span>
 			</h2>
 
 			<FeaturedProjects />

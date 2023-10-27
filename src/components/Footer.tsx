@@ -5,7 +5,7 @@ const Footer = () => {
 		<footer className="prose-base relative dark:dark:bg-gray-950">
 			<div className="container mx-auto px-6 md:px-16 lg:px-28">
 				<div className="flex items-center justify-center">
-					<span className="trapezoid">
+					<span className="md:trapezoid py-4">
 						Designed &amp; Built by Jhigger &copy; 2023
 					</span>
 				</div>
