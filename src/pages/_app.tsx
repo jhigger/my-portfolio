@@ -7,20 +7,25 @@ const MyApp: AppType = ({ Component, pageProps }) => {
 	const [theme, setTheme] = useState<string | null>(null);
 
 	const handleToggle = () => {
-		theme === "light"
-			? setTheme(() => {
-					localStorage.setItem("theme", "dark");
-					return "dark";
-			  })
-			: setTheme(() => {
-					localStorage.setItem("theme", "light");
-					return "light";
-			  });
+		if (theme === "light") {
+			setTheme(() => {
+				document.documentElement.classList.add("dark");
+				localStorage.setItem("theme", "dark");
+				return "dark";
+			});
+		} else {
+			setTheme(() => {
+				document.documentElement.classList.remove("dark");
+				localStorage.setItem("theme", "light");
+				return "light";
+			});
+		}
 	};
 
 	useEffect(() => {
 		const localTheme = localStorage.getItem("theme") ?? "dark";
-		document.querySelector("html")?.setAttribute("data-theme", localTheme);
+		document.documentElement.setAttribute("data-theme", localTheme);
+		theme === "dark" && document.documentElement.classList.add("dark");
 		setTheme(localTheme);
 	}, [theme]);
 
