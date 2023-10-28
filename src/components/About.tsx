@@ -29,12 +29,10 @@ const About = () => {
 	];
 
 	return (
-		<section className="prose-base mx-auto flex flex-col py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
+		<section className="prose-base mx-auto flex flex-col py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 xl:w-3/4">
 			<div id="about-portal"></div>
-			<h2 className="title-line-end">
-				About Me
-			</h2>
-			<div className="flex w-full flex-col items-center gap-4 rounded-2xl bg-gray-500/5 p-8 xl:flex-row xl:gap-24">
+			<h2 className="title-line-end">About Me</h2>
+			<div className="flex w-full flex-col items-center gap-4 rounded-2xl bg-gray-500/5 p-8 lg:flex-row lg:gap-24">
 				<div className="relative w-full max-w-xs">
 					<img
 						className="absolute -bottom-10 left-4 z-10 [clip-path:polygon(15%_0,100%_0,100%_85%,85%_99%,0_100%,0_15%)]"

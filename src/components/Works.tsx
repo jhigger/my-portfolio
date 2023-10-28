@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
+import FlipMove from "react-flip-move";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { featuredProjects, otherProjects } from "~/projects";
-import FlipMove from "react-flip-move";
 
 const FeaturedProjects = () => {
 	return (
@@ -16,12 +16,12 @@ const FeaturedProjects = () => {
 					return (
 						<li
 							key={i}
-							className="grid w-full grid-cols-1 items-center xl:grid-cols-12"
+							className="grid w-full grid-cols-1 items-center lg:grid-cols-12"
 						>
-							<div className="col-span-7 col-start-1 row-span-full aspect-video overflow-clip rounded-lg bg-gray-500/5 ring ring-gray-500/5 hover:ring-gray-500/50">
+							<div className="col-span-7 col-start-1 row-span-full hidden aspect-video overflow-clip rounded-lg bg-gray-500/5 ring ring-gray-500/5 lg:block">
 								<div className="group relative flex h-full w-full items-center justify-center">
 									<a
-										className="absolute z-10 h-full w-full transition-all hover:bg-gray-950/50 focus:bg-gray-950/50"
+										className="absolute z-10 h-full w-full bg-opacity-60 transition-all hover:bg-gray-950/50 hover:backdrop-blur-sm focus:bg-gray-950/50 focus:backdrop-blur-sm"
 										href={project.preview}
 										target="_blank"
 										rel="noopener noreferrer"
@@ -34,9 +34,9 @@ const FeaturedProjects = () => {
 									/>
 								</div>
 							</div>
-							<div className="col-span-7 col-start-6 row-span-full flex h-full flex-col items-end justify-center gap-4">
+							<div className="col-span-7 row-span-full flex h-full flex-col justify-center gap-4 lg:col-start-6 lg:items-end">
 								<h4>{project.title}</h4>
-								<p className="z-10 w-full rounded-lg bg-gray-100 p-4 text-end shadow-lg md:prose-xl dark:bg-gray-900">
+								<p className="relative z-10 w-full rounded-lg bg-gray-100 p-4 shadow-lg md:prose-xl dark:bg-gray-900 lg:text-end">
 									{project.description}
 								</p>
 								<div className="flex gap-4">
@@ -148,7 +148,7 @@ const OtherProjects = () => {
 
 const Works = () => {
 	return (
-		<section className="prose-base mx-auto flex flex-col gap-24 py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 lg:w-3/4">
+		<section className="prose-base mx-auto flex flex-col gap-24 py-24 md:prose-2xl prose-headings:font-bold dark:text-gray-300 xl:w-3/4">
 			<h2 className="title-line-start group !mb-0">
 				Some Of My Works
 				<span className="sm:after:content-['📁'] sm:group-hover:after:content-['📂']"></span>

@@ -17,7 +17,7 @@ const Hero = () => {
 	}, [aboutEl]);
 
 	return (
-		<section className="prose-base relative mx-auto flex min-h-screen flex-col justify-center md:prose-2xl prose-headings:font-bold lg:w-3/4">
+		<section className="prose-base relative mx-auto flex min-h-screen flex-col justify-center md:prose-2xl prose-headings:font-bold xl:w-3/4">
 			<div className="mb-4 text-base font-bold dark:text-gray-200">
 				Hi, my name is
 			</div>
