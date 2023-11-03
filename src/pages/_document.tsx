@@ -15,7 +15,7 @@ class MyDocument extends Document {
 
 	render() {
 		return (
-			<Html>
+			<Html lang="en">
 				<Head></Head>
 				<body className="scrollbar-thin scrollbar-track-gray-500/50 scrollbar-thumb-gray-950/50 dark:scrollbar-track-gray-950/50 dark:scrollbar-thumb-gray-50/50">
 					<Main />
