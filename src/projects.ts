@@ -121,6 +121,12 @@ export const otherProjects: OtherProjectType[] = [
 		github: "https://github.com/jhigger/ua-main-page",
 		preview: "https://kairos-ua-main-page.vercel.app/",
 	},
+	{
+		title: "My Portfolio",
+		description: "This page",
+		github: "https://github.com/jhigger/my-portfolio",
+		preview: "/",
+	},
 	// {
 	// 	title: "",
 	// 	description: "",
