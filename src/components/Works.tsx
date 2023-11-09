@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
+import { useRef, useState } from "react";
 import FlipMove from "react-flip-move";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { featuredProjects, otherProjects } from "~/projects";
@@ -67,15 +67,18 @@ const FeaturedProjects = () => {
 };
 
 const OtherProjects = () => {
-	const initialProjectsShowed = 5;
+	const initialProjectsShowed = 6;
 	const [show, setShow] = useState(false);
+	const ref = useRef<HTMLDivElement>(null);
 
 	const toggleShow = () => {
+		ref.current?.scrollIntoView({ behavior: "smooth" });
 		setShow((prev) => !prev);
 	};
 
 	return (
 		<section>
+			<div ref={ref}></div>
 			<h3 className="row-span-full flex items-baseline justify-end gap-4">
 				<span className="diagonals"></span>
 				Other Projects
@@ -91,7 +94,7 @@ const OtherProjects = () => {
 					const itemsToShow = show
 						? otherProjects.length
 						: initialProjectsShowed;
-					if (i > itemsToShow) return;
+					if (i >= itemsToShow) return;
 
 					return (
 						<li key={project.title} className="group h-full">
