@@ -3,29 +3,36 @@ import { useEffect, useState } from "react";
 import Navbar from "~/components/Navbar";
 import "~/styles/globals.css";
 
+enum ThemeType {
+	Dark = "dark",
+	Light = "light",
+}
+
 const MyApp: AppType = ({ Component, pageProps }) => {
-	const [theme, setTheme] = useState<string | null>(null);
+	const [theme, setTheme] = useState<ThemeType | null>(null);
 
 	const handleToggle = () => {
-		if (theme === "light") {
+		if (theme === ThemeType.Light) {
 			setTheme(() => {
-				document.documentElement.classList.add("dark");
-				localStorage.setItem("theme", "dark");
-				return "dark";
+				document.documentElement.classList.add(ThemeType.Dark);
+				localStorage.setItem("theme", ThemeType.Dark);
+				return ThemeType.Dark;
 			});
 		} else {
 			setTheme(() => {
-				document.documentElement.classList.remove("dark");
-				localStorage.setItem("theme", "light");
-				return "light";
+				document.documentElement.classList.remove(ThemeType.Dark);
+				localStorage.setItem("theme", ThemeType.Light);
+				return ThemeType.Light;
 			});
 		}
 	};
 
 	useEffect(() => {
-		const localTheme = localStorage.getItem("theme") ?? "dark";
+		const localTheme =
+			(localStorage.getItem("theme") as ThemeType) ?? ThemeType.Dark;
 		document.documentElement.setAttribute("data-theme", localTheme);
-		theme === "dark" && document.documentElement.classList.add("dark");
+		theme === ThemeType.Dark &&
+			document.documentElement.classList.add(ThemeType.Dark);
 		setTheme(localTheme);
 	}, [theme]);
 
@@ -35,7 +42,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
 
 	return (
 		<div className={`${theme}`}>
-			<Navbar theme={theme} handleToggle={handleToggle} />
+			<Navbar {...{ theme, handleToggle }} />
 			<Component {...pageProps} />
 		</div>
 	);
