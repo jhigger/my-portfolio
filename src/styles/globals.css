@@ -33,7 +33,7 @@
 		@apply before:absolute before:-right-1 before:top-0 before:h-2 before:w-1/2 before:skew-x-[45deg] before:bg-gray-300 before:shadow-inner before:transition-all after:absolute after:left-0 after:top-0 after:h-px after:w-full after:bg-gray-300 after:shadow-inner after:transition-all before:group-hover:h-4 after:group-hover:h-1 before:dark:bg-gray-600 after:dark:bg-gray-600;
 	}
 	.cut-corners {
-		@apply prose-base relative my-8 px-8;
+		@apply prose-base relative my-8 h-12 px-8 hover:scale-100;
 	}
 
 	.cut-corners::before {
@@ -42,7 +42,7 @@
 		position: absolute;
 		z-index: -1;
 		--clip-box: 1rem;
-		top: -40%;
+		top: 0;
 		left: 0;
 		width: 100%;
 		clip-path: polygon(
@@ -61,7 +61,7 @@
 		position: absolute;
 		z-index: -2;
 		--clip-box: 1rem;
-		top: -40%;
+		top: 0;
 		left: 0;
 		width: 100%;
 		clip-path: polygon(
