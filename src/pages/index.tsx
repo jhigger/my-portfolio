@@ -46,7 +46,7 @@ const Sides = () => {
 							href="https://github.com/jhigger"
 							target="_blank"
 							rel="noopener noreferrer"
-							aria-label="Go to github profile"
+							aria-label="Go to Github profile"
 							title="Github profile"
 						>
 							<FaGithub />
@@ -57,7 +57,7 @@ const Sides = () => {
 							href="https://discord.com/users/284489990598295552"
 							target="_blank"
 							rel="noopener noreferrer"
-							aria-label="Go to discord profile"
+							aria-label="Go to Discord profile"
 							title="Discord profile"
 						>
 							<FaDiscord />
