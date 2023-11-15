@@ -1,4 +1,10 @@
-import { FaDiscord, FaEnvelope } from "react-icons/fa";
+import {
+	FaDiscord,
+	FaEnvelope,
+	FaLinkedin,
+	FaLinkedinIn,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import Balancer from "react-wrap-balancer";
 
 const Contact = () => {
@@ -17,10 +23,32 @@ const Contact = () => {
 						href="https://discord.com/users/284489990598295552"
 						target="_blank"
 						rel="noopener noreferrer"
-						aria-label="Go to discord profile"
-						title="Discord profile"
+						aria-label="Go to Discord profile"
+						title="Discord"
 					>
 						<FaDiscord />
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://x.com/jhigger01"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Go to Twitter profile"
+						title="Twitter"
+					>
+						<FaXTwitter />
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://www.linkedin.com/in/john-jhigger-nepomuceno-13b2a5245/"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Go to LinkedIn profile"
+						title="LinkedIn"
+					>
+						<FaLinkedinIn />
 					</a>
 				</li>
 				<li>
