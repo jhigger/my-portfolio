@@ -21,7 +21,7 @@ const FeaturedProjects = () => {
 							<div className="col-span-7 col-start-1 row-span-full hidden aspect-video overflow-clip rounded-lg bg-gray-500/5 ring ring-gray-500/5 lg:block">
 								<div className="group relative flex h-full w-full items-center justify-center">
 									<a
-										className="absolute z-10 h-full w-full bg-opacity-60 transition-all hover:bg-gray-950/50 hover:backdrop-blur-sm focus:bg-gray-950/50 focus:backdrop-blur-sm"
+										className="absolute z-10 h-full w-full bg-opacity-60 transition-all hover:bg-gray-950/50 hover:backdrop-blur-sm"
 										href={project.preview}
 										target="_blank"
 										rel="noopener noreferrer"
