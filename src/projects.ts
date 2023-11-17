@@ -27,7 +27,7 @@ export const featuredProjects: FeaturedProjectType[] = [
 		image: "images/qtopia.jpg",
 		title: "Qtopia",
 		description: "Created a landing page for an NFT project.",
-		preview: "https://www.qtopia.io/",
+		preview: "https://kairos-qtopia.vercel.app/",
 		github: "https://github.com/jhigger/qtopia",
 	},
 ];
