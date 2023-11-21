@@ -40,7 +40,7 @@ export const otherProjects: OtherProjectType[] = [
 	{
 		title: "Master Of Gingerbread",
 		description:
-			"Website template for a bakery made with vanilla JS, HTML and CSS.",
+			"Website template for a bakery made with vanilla JS, HTML and Materialize CSS.",
 		github: "https://github.com/jhigger/MasterOfGingerbread",
 		preview: "https://masterofgingerbread.netlify.app/",
 	},
@@ -92,26 +92,26 @@ export const otherProjects: OtherProjectType[] = [
 	{
 		title: "UA Raid Page",
 		description:
-			"A Page for users to apply for Utility APE tweet raiding program.",
+			"A page for users to apply for Utility APE tweet raiding program.",
 		github: "https://github.com/jhigger/ua-pay-to-raid",
 		preview: "https://kairos-ua-pay-to-raid.vercel.app/",
 	},
 	{
 		title: "UA Client Dashboard",
 		description:
-			"A dashboard page for signing up to use Utility APE discord bot.",
+			"A ticketing system for signing up to use Utility APE discord bot.",
 		github: "https://github.com/jhigger/ua-client-dashboard",
 		preview: "https://kairos-ua-dashboard-page.vercel.app/",
 	},
 	{
 		title: "UA Holders Page",
-		description: "A page for holders of Utility APE NFT",
+		description: "A landing page for holders of Utility APE NFT",
 		github: "https://github.com/jhigger/ua-holders-page",
 		preview: "https://kairos-ua-holders-page.vercel.app/",
 	},
 	{
 		title: "UA Client Page",
-		description: "Page for clients of Utility APE discord bot.",
+		description: "A landing page for clients of Utility APE discord bot.",
 		github: "https://github.com/jhigger/ua-client-page",
 		preview: "https://kairos-ua-client-page.vercel.app/",
 	},
