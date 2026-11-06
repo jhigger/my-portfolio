@@ -19,7 +19,7 @@ const Navbar = ({ theme, handleToggle }: NavbarProps) => {
 				<div className="relative flex items-center justify-center">
 					<a
 						className="btn btn-ghost btn-sm flex items-center justify-center gap-2"
-						href="/Resume2023.pdf"
+						href="/resume.pdf"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
