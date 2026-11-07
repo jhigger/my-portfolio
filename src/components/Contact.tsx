@@ -1,5 +1,4 @@
 import { FaDiscord, FaEnvelope, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import Balancer from "react-wrap-balancer";
 
 const Contact = () => {
@@ -22,17 +21,6 @@ const Contact = () => {
 						title="Discord"
 					>
 						<FaDiscord />
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://x.com/jhigger01"
-						target="_blank"
-						rel="noopener noreferrer"
-						aria-label="Go to Twitter profile"
-						title="Twitter"
-					>
-						<FaXTwitter />
 					</a>
 				</li>
 				<li>
